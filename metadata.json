@@ -1,0 +1,6 @@
+{
+  "name": "日记",
+  "description": "融合iOS原生美学与AI赋能的心灵日记本，支持那年今日时光闪回、结构化日记模板、时光胶囊、心绪复盘、足迹漫游、成就勋章、电子书导出、日历热力图与隐私安全锁。",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

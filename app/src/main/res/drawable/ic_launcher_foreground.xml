@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Centered within the 66dp safe zone (21dp to 87dp) -->
+    <!-- Diary Book Cover Shadow -->
+    <path
+        android:fillColor="#26000000"
+        android:pathData="M27,27 h44 c3,0 5.5,2.5 5.5,5.5 v51 c0,3 -2.5,5.5 -5.5,5.5 H27 c-3,0 -5.5,-2.5 -5.5,-5.5 v-51 c0,-3 2.5,-5.5 5.5,-5.5 z" />
+    <!-- Diary Book Outer Cover (Warm Amber / Leather Tone) -->
+    <path
+        android:fillColor="#E09F3E"
+        android:pathData="M26,25 h44 c3,0 5.5,2.5 5.5,5.5 v51 c0,3 -2.5,5.5 -5.5,5.5 H26 c-3,0 -5.5,-2.5 -5.5,-5.5 v-51 c0,-3 2.5,-5.5 5.5,-5.5 z" />
+    <!-- Book Spine Band -->
+    <path
+        android:fillColor="#C47E24"
+        android:pathData="M20.5,30.5 v51 c0,3 2.5,5.5 5.5,5.5 h6 v-62 h-6 c-3,0 -5.5,2.5 -5.5,5.5 z" />
+    <!-- Inside Paper (Warm Ivory) -->
+    <path
+        android:fillColor="#FFF8EE"
+        android:pathData="M34,28 h37 c2,0 3.5,1.5 3.5,3.5 v45 c0,2 -1.5,3.5 -3.5,3.5 H34 z" />
+    <!-- Golden Bookmark Ribbon Hanging -->
+    <path
+        android:fillColor="#E76F51"
+        android:pathData="M52,25 v24 l4.5,-4 4.5,4 v-24 z" />
+    <!-- Ruled Journal Lines -->
+    <path
+        android:strokeColor="#D4C5B9"
+        android:strokeWidth="1.8"
+        android:strokeLineCap="round"
+        android:pathData="M39,37 h25 M39,44 h27 M39,51 h23 M39,58 h26 M39,65 h18" />
+    <!-- Modern Quill / Fountain Pen -->
+    <path
+        android:fillColor="#2A9D8F"
+        android:pathData="M70,55 l12,-12 c1,-1 2.5,-1 3.5,0 l2.5,2.5 c1,1 1,2.5 0,3.5 L76,61 z" />
+    <!-- Pen Nib (Gold) -->
+    <path
+        android:fillColor="#F4A261"
+        android:pathData="M70,55 l6,6 -9,3 z" />
+    <path
+        android:fillColor="#264653"
+        android:pathData="M67,64 l1,-1" />
+</vector>
