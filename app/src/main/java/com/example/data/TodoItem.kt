@@ -42,4 +42,10 @@ data class TodoItem(
             val sdf = SimpleDateFormat("MM-dd HH:mm", Locale.CHINESE)
             return sdf.format(Date(createdAt))
         }
+
+    val formattedCompletedDate: String?
+        get() = completedAt?.let {
+            val sdf = SimpleDateFormat("MM-dd HH:mm", Locale.CHINESE)
+            sdf.format(Date(it))
+        }
 }

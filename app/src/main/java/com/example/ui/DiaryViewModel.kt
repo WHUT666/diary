@@ -276,6 +276,22 @@ class DiaryViewModel(
         initialValue = 0
     )
 
+    val completedTodoCount: StateFlow<Int> = todoRepository.allTodos.map { list ->
+        list.count { it.isCompleted }
+    }.stateIn(
+        scope = viewModelScope,
+        started = SharingStarted.WhileSubscribed(5000),
+        initialValue = 0
+    )
+
+    val allTodoCount: StateFlow<Int> = todoRepository.allTodos.map { list ->
+        list.size
+    }.stateIn(
+        scope = viewModelScope,
+        started = SharingStarted.WhileSubscribed(5000),
+        initialValue = 0
+    )
+
     // Computed overall statistics
     val diaryStats: StateFlow<DiaryStats> = allRawEntries.combine(filteredEntries) { allList, _ ->
         computeStats(allList)

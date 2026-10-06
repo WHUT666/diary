@@ -58,6 +58,7 @@ fun SwipeableActionItem(
     onPin: (() -> Unit)? = null,
     deleteLabel: String = "删除",
     pinLabel: String = "置顶",
+    pinIcon: androidx.compose.ui.graphics.vector.ImageVector = Icons.Default.PushPin,
     isPinned: Boolean = false,
     content: @Composable () -> Unit
 ) {
@@ -145,14 +146,14 @@ fun SwipeableActionItem(
                         verticalAlignment = Alignment.CenterVertically
                     ) {
                         Icon(
-                            imageVector = Icons.Default.PushPin,
+                            imageVector = pinIcon,
                             contentDescription = pinLabel,
                             tint = Color.White,
                             modifier = Modifier.size(20.dp)
                         )
                         Spacer(modifier = Modifier.width(6.dp))
                         Text(
-                            text = if (isPinned) "取消置顶" else pinLabel,
+                            text = pinLabel,
                             color = Color.White,
                             fontSize = 14.sp,
                             fontWeight = FontWeight.Bold
